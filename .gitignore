@@ -8,6 +8,4 @@ app/vendor
 .idea
 *.iml
 dist.zip
-widgetlist.xml
-web
-flash/.metadata
+test/
