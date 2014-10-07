@@ -1,0 +1,13 @@
+/app/scripts/templates.js
+node_modules
+dist
+coverage
+.tmp
+.sass-cache
+app/vendor
+.idea
+*.iml
+dist.zip
+widgetlist.xml
+web
+flash/.metadata
