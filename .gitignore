@@ -9,3 +9,8 @@ app/vendor
 *.iml
 dist.zip
 test/
+.bowerrc
+.editorconfig
+.gitattributes
+.jshintrc
+.travis.yml
