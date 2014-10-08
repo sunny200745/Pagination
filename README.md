@@ -56,7 +56,7 @@ Requires these set up in codebase in order to set your pagination module up
 	<li>
 		<code>
 			<em>ng-class : disabled</em>
-		</code> : its a class that is applied conditionaly on &lt&lt if its first page and on &gt&gt if its last page.
+		</code> : its a class that is applied conditionaly on &lt;&lt; if its first page and on &gt;&gt; if its last page.
 	</li>
 	<li>
 		<code>
@@ -75,31 +75,31 @@ Requires these set up in codebase in order to set your pagination module up
 ###Inside viewbase
 <ul>
 	<li>
-		<code>&ltul class="pagination" &gt &lt/ul&gt</code> : Add the class pagination in order to get all the css to be applied.
+		<code>&lt;ul class="pagination" &gt; &lt;/ul&gt;</code> : Add the class pagination in order to get all the css to be applied.
 	</li>
 
 	<li>
 		<code>
-			&ltli ng-class="{'disabled':currentPage === 0}"&gt &lta&gt&laquo; &lt/a&gt &lt/li&gt
-		</code> : Sets the class disabled in order to make the  &lt&lt disabled if current page is first page
+			&lt;li ng-class="{'disabled':currentPage === 0}"&gt; &lt;a&gt;&laquo; &lt;/a&gt; &lt;/li&gt;
+		</code> : Sets the class disabled in order to make the  &lt;&lt; disabled if current page is first page
 	</li>
 
 	<li>
 		<code>
-			&ltli  ng-repeat="i in getNumber(numberOfPages) track by $index"  ng-class="{'active':currentPage ===  $index}"&gt &lta &gt{{$index+1}} &lt/a&gt &lt/li&gt
+			&lt;li  ng-repeat="i in getNumber(numberOfPages) track by $index"  ng-class="{'active':currentPage ===  $index}"&gt; &lt;a &gt;{{$index+1}} &lt;/a&gt; &lt;/li&gt;
 		</code> : This will generate the pageNumber list as per the content size mentioned in the codebase
 	</li>
 
 	<li>
 		<code>
-			&ltli ng-class="{'disabled' : currentPage >= visibleData.length/pageSize - 1}"&gt &lta&gt&raquo;&lt/a&gt &lt/li&gt
-		</code> : Sets the class disabled in order to make the  &gt&gt disabled if current page is last page of our pagination list
+			&lt;li ng-class="{'disabled' : currentPage >= visibleData.length/pageSize - 1}"&gt;&lt;a&gt;&raquo;&lt;/a&gt; &lt;/li&gt;
+		</code> : Sets the class disabled in order to make the  &gt;&gt; disabled if current page is last page of our pagination list
 	</li>
 	
 </ul>
 
 
-Also we have attached the click-handlers on all the <code>&ltli&gt</code> elements primarly <code>next()</code> for next ">>"  button , <code>prev()</code> for next "<<"  button and <code>onCLickPagedNumber()</code> for current page
+Also we have attached the click-handlers on all the <code>&lt;li&gt;</code> elements primarly <code>next()</code> for next &gt;&gt;  button , <code>prev()</code> for previous &lt;&lt;  button and <code>onCLickPagedNumber()</code> for current page
 
 ## Tests
 
