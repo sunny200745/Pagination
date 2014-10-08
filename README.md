@@ -18,14 +18,6 @@ In this current project i have used bootstrap for ease of css purpose.
 	<li><code>IE8+</code></li>
 </ul>
 
-## Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
-
 ## Primary Setup
 
 Primarly only AngularJS is required to use the module, other css frameworks such as bootstrap can be complimentary that i have used.
@@ -101,14 +93,3 @@ Requires these set up in codebase in order to set your pagination module up
 
 Also we have attached the click-handlers on all the <code>&lt;li&gt;</code> elements primarly <code>next()</code> for next &gt;&gt;  button , <code>prev()</code> for previous &lt;&lt;  button and <code>onCLickPagedNumber()</code> for current page
 
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
