@@ -39,22 +39,22 @@ Requires these set up in codebase in order to set your pagination module up
 ###Inside codebase
 <ul>
 	<li>
-		<code><em style="color:red;">numberOfPages</em></code> : is the number of pages that needs to be displayed in pagination
+		<code><em style="color:red;!important">numberOfPages</em></code> : is the number of pages that needs to be displayed in pagination
 	</li>
 	<li>
-		<code><em style="color:red;">visibleData</em></code> : lists that comprises of the pagination data that needs to be displayed.	
+		<code><em style="color:red;!important">visibleData</em></code> : lists that comprises of the pagination data that needs to be displayed.	
 	</li>
 	<li>
-		<code><em style="color:red;">pageSize</em></code> : number of list items that needs to be displayed per page.		
+		<code><em style="color:red;!important">pageSize</em></code> : number of list items that needs to be displayed per page.		
 	</li>
 	<li>
-		<code><em style="color:red;">ng-class : disabled</em></code> : its a class that is applied conditionaly on "<""<" if its first page and on ">"">" if its last page.
+		<code><em style="color:red;!important">ng-class : disabled</em></code> : its a class that is applied conditionaly on << if its first page and on >> if its last page.
 	</li>
 	<li>
-		<code><em style="color:red;">currentPage</em></code> : is the page that is currently displayed.		
+		<code><em style="color:red;!important">currentPage</em></code> : is the page that is currently displayed.		
 	</li>
 	<li>
-		<code><em style="color:red;">ng-click</em></code> : angular directive that should correspond to the binding attribute, to populate results list and display pagination when the specified event is fired.
+		<code><em style="color:red;!important">ng-click</em></code> : angular directive that should correspond to the binding attribute, to populate results list and display pagination when the specified event is fired.
 	</li>
 </ul>	
 
