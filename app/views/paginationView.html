@@ -1,5 +1,5 @@
 <ul class="pagination" style="padding-left: 35%" >
-    <li   ng-disabled="currentPage === 0" ng-click="prev()">
+    <li ng-class="{'disabled':currentPage === 0}"  ng-click="prev()">
       <a>&laquo;</a>
     </li>  
 
@@ -15,7 +15,7 @@
       <a >...</a>
     </li> -->
     
-    <li ng-disabled="currentPage >= visibleData.length/pageSize - 1" ng-click="next()">
+    <li ng-class="{'disabled' : currentPage >= visibleData.length/pageSize - 1}" ng-click="next()">
       <a >&raquo;</a>
     </li>
 </ul>
