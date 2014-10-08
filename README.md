@@ -13,9 +13,9 @@ In this current project i have used bootstrap for ease of css purpose.
 
 ##Browser support
 <ul>
-	<li>Chrome</li>
-	<li>Firefox</li>
-	<li>IE8+</li>
+	<li><code>Chrome</code></li>
+	<li><code>Firefox</code></li>
+	<li><code>IE8+</code></li>
 </ul>
 
 ## Code Example
