@@ -39,33 +39,33 @@ Requires these set up in codebase in order to set your pagination module up
 ###Inside codebase
 <ul>
 	<li>
-		<pre>
-			<em style="color:red;">numberOfPages</em>
-		</pre> : is the number of pages that needs to be displayed in pagination
+		<code>
+			<em>numberOfPages</em>
+		</code> : is the number of pages that needs to be displayed in pagination
 	</li>
 	<li>
 		<code>
-			<em style="color:red;">visibleData</em>
+			<em>visibleData</em>
 		</code> : lists that comprises of the pagination data that needs to be displayed.	
 	</li>
 	<li>
 		<code>
-			<em style="color:red;">pageSize</em>
+			<em>pageSize</em>
 		</code> : number of list items that needs to be displayed per page.		
 	</li>
 	<li>
 		<code>
-			<em style="color:red;">ng-class : disabled</em>
-		</code> : its a class that is applied conditionaly on << if its first page and on >> if its last page.
+			<em>ng-class : disabled</em>
+		</code> : its a class that is applied conditionaly on &lt&lt if its first page and on &gt&gt if its last page.
 	</li>
 	<li>
 		<code>
-			<em style="color:red;">currentPage</em>
+			<em>currentPage</em>
 		</code> : is the page that is currently displayed.		
 	</li>
 	<li>
 		<code>
-			<em style="color:red;">ng-click</em>
+			<em>ng-click</em>
 		</code> : angular directive that should correspond to the binding attribute, to populate results list and display pagination when the specified event is fired.
 	</li>
 </ul>	
@@ -75,15 +75,13 @@ Requires these set up in codebase in order to set your pagination module up
 ###Inside viewbase
 <ul>
 	<li>
-		<code>
-			&ltul class="pagination"&gt &lt/ul&gt
-		</code> : Add the class pagination in order to get all the css to be applied.
+		<code>&ltul class="pagination" &gt &lt/ul&gt</code> : Add the class pagination in order to get all the css to be applied.
 	</li>
 
 	<li>
 		<code>
 			&ltli ng-class="{'disabled':currentPage === 0}"&gt &lta&gt&laquo; &lt/a&gt &lt/li&gt
-		</code> : Sets the class disabled in order to make the  "<<" disabled if current page is first page
+		</code> : Sets the class disabled in order to make the  &lt&lt disabled if current page is first page
 	</li>
 
 	<li>
@@ -95,7 +93,7 @@ Requires these set up in codebase in order to set your pagination module up
 	<li>
 		<code>
 			&ltli ng-class="{'disabled' : currentPage >= visibleData.length/pageSize - 1}"&gt &lta&gt&raquo;&lt/a&gt &lt/li&gt
-		</code> : Sets the class disabled in order to make the  ">>" disabled if current page is last page of our pagination list
+		</code> : Sets the class disabled in order to make the  &gt&gt disabled if current page is last page of our pagination list
 	</li>
 	
 </ul>
