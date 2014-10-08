@@ -1,23 +1,46 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+  <div class="heading">
+       <div class="col">Caps</div>
+       <div class="col">Qunatity </div>
+       <div class="col">Price($) </div>
+  </div>
+  <div class="table-row" ng-repeat="product in visibleData | pageFilter:currentPage*pageSize | limitTo:pageSize">
+
+      <div class="col">{{product.Name}}</div>
+
+      <div class="col quantity" data-product="{{product}}"  id="{{product.Id}}_Qty"  ng-mouseenter='mouseEntered(product)'>
+          <span ng-hide="product.Name === editQtyProdName" >{{product.Qty}} </span>
+          <input type="text" ng-show="product.Name === editQtyProdName" ng-model="quantity">
+
+      </div>
+
+      <div class="col price" data-product="{{product}}"  id="{{product.Id}}_Price">
+          <span ng-hide="product.Name === editPriceProdName" >{{product.Price}} </span>
+          <input type="text" ng-show="product.Name === editPriceProdName" >
+      </div>
+
+
+  </div>
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+<ul class="pagination" style="padding-left: 35%">
+    <li   ng-disabled="currentPage === 0" ng-click="prev()">
+      <a>&laquo;</a>
+    </li>  
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+    <!-- <li ng-disabled="currentPage >= visibleData.length/pageSize - 1" ng-click="next()">
+      <a >...</a>
+    </li> -->
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+    <li  ng-repeat="i in getNumber(numberOfPages) track by $index"  ng-class="{'active':currentPage ===  $index}"  ng-click="onCLickPagedNumber($index)">
+        <a >{{$index+1}}</a>
+    </li>
+
+    <!-- <li ng-disabled="currentPage >= visibleData.length/pageSize - 1" ng-click="next()">
+      <a >...</a>
+    </li> -->
+    
+    <li ng-disabled="currentPage >= visibleData.length/pageSize - 1" ng-click="next()">
+      <a >&raquo;</a>
+    </li>
+</ul>

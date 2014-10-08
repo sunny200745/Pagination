@@ -8,10 +8,46 @@
  * Controller of the devWorkApp
  */
 angular.module('devWorkApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl',['$scope','data', function ($scope,data) {
+    
+    data.products(function(d){
+      if(d){
+        $scope.visibleData = d;
+      }
+    });
+
+    $scope.currentPage = 0;
+    $scope.pageSize = 7;
+    
+    //$scope.noOfVisiblePages = 5;
+    
+    $scope.visibleData = [];
+
+    $scope.next = function(){
+      if($scope.currentPage >= $scope.visibleData.length/$scope.pageSize - 1){
+        return false;
+      }
+      $scope.currentPage += 1;      
+    };
+
+    $scope.prev = function(){
+      if($scope.currentPage === 0){
+        return false;
+      }
+      $scope.currentPage -= 1;
+
+    };
+
+    $scope.numberOfPages=function(){
+      return Math.ceil($scope.visibleData.length/$scope.pageSize);
+    };
+
+    $scope.getNumber = function(num) {
+      return new Array(num());
+    };
+
+    $scope.onCLickPagedNumber = function(number){
+      $scope.currentPage = number;
+    };
+
+  }]);
