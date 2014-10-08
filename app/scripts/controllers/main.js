@@ -16,13 +16,13 @@ angular.module('devWorkApp')
       }
     });
 
+    $scope.visibleData = [];
+
+
+    $scope.paginationView = "./views/paginationView.html";
     $scope.currentPage = 0;
     $scope.pageSize = 7;
     
-    //$scope.noOfVisiblePages = 5;
-    
-    $scope.visibleData = [];
-
     $scope.next = function(){
       if($scope.currentPage >= $scope.visibleData.length/$scope.pageSize - 1){
         return false;

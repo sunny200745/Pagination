@@ -1,0 +1,21 @@
+<ul class="pagination" style="padding-left: 35%" >
+    <li   ng-disabled="currentPage === 0" ng-click="prev()">
+      <a>&laquo;</a>
+    </li>  
+
+    <!-- <li ng-disabled="currentPage >= visibleData.length/pageSize - 1" ng-click="next()">
+      <a >...</a>
+    </li> -->
+
+    <li  ng-repeat="i in getNumber(numberOfPages) track by $index"  ng-class="{'active':currentPage ===  $index}"  ng-click="onCLickPagedNumber($index)">
+        <a >{{$index+1}}</a>
+    </li>
+
+    <!-- <li ng-disabled="currentPage >= visibleData.length/pageSize - 1" ng-click="next()">
+      <a >...</a>
+    </li> -->
+    
+    <li ng-disabled="currentPage >= visibleData.length/pageSize - 1" ng-click="next()">
+      <a >&raquo;</a>
+    </li>
+</ul>
