@@ -36,17 +36,17 @@ Simply include the paginationView to the place where you want to put the paginat
 
 Requires these set up in codebase in order to set your pagination module up
 
-#Inside codebase
-<code>numberOfPages<code> : is the number of pages that needs to be displayed in pagination
-<code>visibleData<code> : lists that comprises of the pagination data that needs to be displayed.
-<code>pageSize<code> : number of list items that needs to be displayed per page.
+###Inside codebase
+<code>numberOfPages</code> : is the number of pages that needs to be displayed in pagination
+<code>visibleData</code> : lists that comprises of the pagination data that needs to be displayed.
+<code>pageSize</code> : number of list items that needs to be displayed per page.
 
-<code>ng-class : disabled<code> : its a class that is applied conditionaly on "<<" if its first page and on ">>" if its last page.
-<code>currentPage<code> : is the page that is currently displayed.
-<code>ng-click<code> : angular directive that should correspond to the binding attribute, to populate results list and display pagination when the specified event is fired.
+<code>ng-class : disabled</code> : its a class that is applied conditionaly on "<<" if its first page and on ">>" if its last page.
+<code>currentPage</code> : is the page that is currently displayed.
+<code>ng-click</code> : angular directive that should correspond to the binding attribute, to populate results list and display pagination when the specified event is fired.
 
-#Inside viewbase
-<code><ul class="pagination"></ul></code> : Add the class pagination in order to get all the css to be applied
+###Inside viewbase
+<code><ul class='pagination'></ul></code> : Add the class pagination in order to get all the css to be applied
 
 <code>
 	<li ng-class="{'disabled':currentPage === 0}"><a>&laquo;</a></li>
