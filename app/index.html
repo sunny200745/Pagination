@@ -6,12 +6,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
+
+    <!-- build:css(app) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -27,14 +28,21 @@
     </div>
 
 
-    <!-- build:js(.) scripts/vendor.js -->
+
+
+        
+
+    <!-- build:js(app) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/es5-shim/es5-shim.js"></script>
     <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/json3/lib/json3.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
     <script src="vendor/angular-resource/angular-resource.js"></script>
     <script src="vendor/angular-cookies/angular-cookies.js"></script>
     <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -45,6 +53,8 @@
         <script src="scripts/controllers/mainparent.js"></script>
         <script src="scripts/filters/pagefilter.js"></script>
         <script src="scripts/services/data.js"></script>
+
+        <script src="json/products.json"></script>
         <!-- endbuild -->
 </body>
 </html>
