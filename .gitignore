@@ -1,6 +1,5 @@
 /app/scripts/templates.js
 node_modules
-dist
 coverage
 .tmp
 .sass-cache
