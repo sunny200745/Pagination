@@ -1,5 +1,4 @@
-var hopscotch = hopscotch;
-console.debug(hopscotch)
+
     var tour = {
       id: "hello-hopscotch",
       steps: [
