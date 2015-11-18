@@ -49,9 +49,9 @@ var addClickListener = function(el, fn) {
   else {
     el.attachEvent('onclick', fn);
   }
-},
+};
 
-init = function() {
+var init = function() {
   var startBtnId = 'startTourBtn',
       calloutId = 'startTourCallout',
       mgr = hopscotch.getCalloutManager();
@@ -81,7 +81,7 @@ init = function() {
   });
 
 };
-onClose = function(){
+var onClose = function(){
   document.getElementById('startTourBtn').disabled = true;
 };
 
