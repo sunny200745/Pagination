@@ -60,6 +60,10 @@ body {
   border: 1px solid #CCC;
   width : 200px;
 }
+.tourBtn{
+  float: right;
+    margin-top: -56px;
+}
 
 /* Customize container */
 @media (min-width: 768px) {
