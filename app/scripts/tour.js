@@ -80,9 +80,10 @@ var init = function() {
     }
   });
 
-};
-var onClose = function(){
-  document.getElementById('startTourBtn').disabled = true;
-};
+  var onClose = function(){
+    document.getElementById('startTourBtn').disabled = true;
+  };
+
+}; 
 
 init();

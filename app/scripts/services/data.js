@@ -1,5 +1,6 @@
 'use strict';
 
+
 /**
  * @ngdoc service
  * @name devWorkApp.Data
@@ -28,5 +29,5 @@ angular.module('devWorkApp')
           // called asynchronously if an error occurs
           // or server returns response with an error status.
         });
-    }
+    };
   }]);
