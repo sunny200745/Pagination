@@ -20,12 +20,14 @@ angular.module('devWorkApp')
           // this callback will be called asynchronously
           // when the response is available
 
-          //console.debug(data);
+          console.debug("Inside Success of products.json , here  status =>"+status+" headers =>"+JSON.stringify(headers())+" config =>"+JSON.stringify(config));
           callback(data);
 
         }).
         error(function(data, status, headers, config) {
-        	callback(false);
+        	console.debug("Inside Error of products.json , here  status =>"+status+" headers =>"+JSON.stringify(headers())+" config =>"+JSON.stringify(config));
+          
+          callback(false);
           // called asynchronously if an error occurs
           // or server returns response with an error status.
         });

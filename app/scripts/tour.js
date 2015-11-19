@@ -1,4 +1,4 @@
-
+'use strict';
     var tour = {
       id: "hello-hopscotch",
       steps: [
