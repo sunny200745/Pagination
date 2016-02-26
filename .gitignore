@@ -1,0 +1,16 @@
+/app/scripts/templates.js
+node_modules
+coverage
+.tmp
+.sass-cache
+app/vendor
+.idea
+*.iml
+dist.zip
+test/
+.bowerrc
+.editorconfig
+.gitattributes
+.jshintrc
+.travis.yml
+.DS_Store

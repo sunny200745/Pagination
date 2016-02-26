@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css(app) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="devWorkApp">
+      <!-- Add your site or application content here -->
+    <div class="container" ng-controller="MainParentCtrl">
+      <div class="header" id="header">        
+        <h3 class="text-muted">Bootstrap Pagination</h3>
+        <!-- <button type="button" id="startTourBtn" class="btn tourBtn btn-primary">Tour</button> -->
+      </div>
+
+      <div ng-view=""></div>
+      
+    </div>
+
+
+
+
+        
+
+    <!-- build:js(app) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/es5-shim/es5-shim.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/json3/lib/json3.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="vendor/angular-resource/angular-resource.js"></script>
+    <script src="vendor/angular-cookies/angular-cookies.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="vendor/angular-tour/dist/angular-tour-tpls.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/mainparent.js"></script>
+        <script src="scripts/filters/pagefilter.js"></script>
+        <script src="scripts/services/data.js"></script>
+
+        <script src="json/products.json"></script>
+        <script src="scripts/tour.js"></script>
+
+        <!-- endbuild -->
+</body>
+</html>
